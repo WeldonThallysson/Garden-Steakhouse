@@ -1,19 +1,38 @@
 
 
 <script>
+ import http from '@/service/http.js';
+ import {reactive} from 'vue';
+ 
+
+ const user = reactive({
+      email: '' ,
+      password:'',
+    });
+ 
+ 
+
+
   export default{
       name: 'SignIn',
       data() {
-        return {
-            
+        return { 
+          email: '',
+          password: '',
+       
         }
       },
       methods:{
-            Login(e){
+      async Login(e){
                 e.preventDefault();
                 
                 //aqui posso passar o name que crei para a rota ou o path que seria /home tbm pode ser o importante é que atráves do .use(router) no main posso usar o $router em qualquer arquivo dentro da tag script, to usando aqui para quando clicar empurrar para a rota home onde está o dashboard das reservas.
-
+                try{
+                  const {data} = await http.post('/auth',user);
+                  console.log(data);
+                }catch(error){
+                      console.log(error?.response?.data);
+                }
                 this.$router.push({name: 'home'})
             },
             CriarConta(e){
@@ -38,12 +57,12 @@
                 <form @submit="Login">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Digite seu Email:</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" v-model="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       <div id="emailHelp" class="form-text">caso tenha duvida use seu gmail ou hotmail criado!</div>
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">Digite sua Senha:</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                      <input type="password" v-model="password" class="form-control" id="exampleInputPassword1">
                     </div>
                   
                     <button type="submit" class="btn btn-primary">Entrar</button>
