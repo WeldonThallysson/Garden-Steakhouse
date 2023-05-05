@@ -2,13 +2,12 @@
 
 <script>
  import DashboardComponent from '../../components/DashboardComponent.vue';
- import CardsReservasComponent from '../../components/CardsReservas/CardsReservasComponent.vue';
+
    export default{
-    name: "MinhasReservas",
+    name: "Contato",
     components:{
         DashboardComponent,
-        CardsReservasComponent,
-   
+ 
     }
 
    }
@@ -19,12 +18,12 @@
     <div class="main">
        
             <DashboardComponent>
-               <div>
-                 <h2>Minhas Reservas</h2>
-               </div>
-               <CardsReservasComponent/>
+                <div>
+                    <h2>Contato com a Garden SteakHouse</h2>
+                </div>
             </DashboardComponent>
           
+      
         
 
      

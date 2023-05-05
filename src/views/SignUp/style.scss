@@ -1,0 +1,103 @@
+@import '@/assets/scss/_main';
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&display=swap');
+
+.login::after {
+    content: "";
+    background:linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6799894957983193) 0%, rgba(0,0,0,0.6474964985994398) 52%, rgba(0,0,0,0.9418942577030813) 100%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+
+}
+.login {
+    align-items: center;
+    background: url('../../assets/Imgs/Playground-Restaurant.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2%;
+    display: flex;
+    height: 100vh;
+    width:100vw;
+    object-fit: contain;
+}
+
+
+
+.content__login {
+   display: flex;
+   flex-direction: row;
+   width: 100vw;
+   z-index: 2;
+   margin: 0 8rem;
+   
+   justify-content: space-between;
+   align-items: center;
+ 
+}
+
+.content__Form {
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 455px; 
+    justify-content: center; 
+    width: 480px;
+
+
+}
+.content__Logo{
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-bottom: 185px;
+   margin-right: 100px;
+
+   p { 
+       color: white;
+       font-size: 25px;
+       font-family: 'Barlow', sans-serif;
+       margin-top: -130px;
+   }
+
+   img{
+     width:100%;
+
+   
+   }
+}
+
+.content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 25px;
+}
+.titulo{
+   color: rgb(34, 16, 1);
+}
+.btn-primary{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   background-color: $marronvinho;
+   border: none;
+}
+
+.btn-primary:hover{
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  
+ }
+
+.btn-secundary{
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    align-items: center;
+    text-align: center;
+    border: none;
+}

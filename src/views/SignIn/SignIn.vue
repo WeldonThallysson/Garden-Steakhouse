@@ -15,6 +15,11 @@
                 //aqui posso passar o name que crei para a rota ou o path que seria /home tbm pode ser o importante é que atráves do .use(router) no main posso usar o $router em qualquer arquivo dentro da tag script, to usando aqui para quando clicar empurrar para a rota home onde está o dashboard das reservas.
 
                 this.$router.push({name: 'home'})
+            },
+            CriarConta(e){
+                   e.preventDefault();
+
+                   this.$router.push({name:'signup' });
             }
       }
 
@@ -28,7 +33,7 @@
         <div class="content__login">
             <div class="content__Form">
                 <div class="content__Title-Form"> 
-                 <h2 class="titulo">Login Account</h2>
+                 <h2 class="titulo">Bem Vindo</h2>
                 </div> 
                 <form @submit="Login">
                     <div class="mb-3">
@@ -42,7 +47,7 @@
                     </div>
                   
                     <button type="submit" class="btn btn-primary">Entrar</button>
-                    <button type="submit" class="btn btn-secundary">Ainda não tem uma conta?</button>
+                    <button type="submit" class="btn btn-secundary" @click="CriarConta">Ainda não tem uma conta? </button>
                   </form>
             </div>
             <div class="content__Logo">

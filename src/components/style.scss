@@ -1,0 +1,63 @@
+
+@import '@/assets/scss/_main';
+
+.main{
+    width: 100%s;
+    height: 100vh;
+    
+
+}
+
+.content__principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.content__side-bar{
+    display: flex;
+    width: 280px;
+    height: 100vh;
+    background:url('../assets/Imgs/restaurant_background.png');
+    background-position: 5%;
+    background-size: 90vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    h2{
+        text-align: center;
+        z-index: 1;
+        color: #fff;
+    }
+
+}
+
+
+.content__side-bar::before{
+    content: "";
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.6799894957983193) 0%, rgba(0,0,0,0.6474964985994398) 52%, rgba(0,0,0,0.9418942577030813) 100%); 
+    position: absolute;
+    width:100%;
+    height: 100vh;
+
+
+}
+
+.content__nav-bar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 15, 15);
+
+    width: 82vw;
+    height: 80px;
+
+}
+
+.pages{
+    width: 100%;
+    height: auto;
+   
+}
+.content__lateral{
+ 
+}
+
