@@ -3,6 +3,17 @@ export default {
 
   name: 'CardsReservasComponent',
 
+  data() {
+    return {
+      nome: 'Roberto',
+      mesa: '1',
+      data: '22/05/2023',
+      horario_reservado: '19:00',
+      descricao: 'em frente a Lareira'
+
+    }
+  },
+
 }
 
 </script>
@@ -17,12 +28,12 @@ export default {
     <div class="conteudo__principal">
       <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">
-          <p class="titulo__header">Nome do Cliente </p>
-          <p class="titulo__Mesa">Mesa 1</p>
+          <p class="titulo__header">{{nome}} </p>
+          <p class="titulo__Mesa">Mesa {{mesa}}</p>
         </div>
         <div class="card-body">
-          <span class="card-title">Reservada para 22/05/2023</span>
-          <p class="card-text"> Mesa reservada para as 19:30h em frente a Lareira! </p>
+          <span class="card-title">Reservada para {{data}}</span>
+          <p class="card-text"> Mesa reservada para as {{horario_reservado}}h {{ descricao }}! </p>
         </div>
       </div>
       <div class="card text-bg-primary mb-3" style="max-width: 18rem;">

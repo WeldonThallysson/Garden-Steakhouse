@@ -5,7 +5,7 @@
 
 .content__titulo-principal {
   display: flex;
-  margin: 1.7rem;
+  margin: 1.2rem;
   border-bottom: 2px solid rgb(22, 22, 22);
   width: 250px;
 }
@@ -21,7 +21,7 @@
 .ratio {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 1250px;
   height: 230px;
   margin: 15px 30px;
 }
@@ -31,6 +31,26 @@
 }
 .lista__social {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 .items__Lista {
+    margin: 10px 0px ;
+
+}
+.texto__link{
+    
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.Contato{
+    margin: 5px 0px;
+    justify-content: start;
 }

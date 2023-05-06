@@ -41,8 +41,6 @@ export default {
 
                   <img class="mesa_icone" src="../../assets/Imgs/MesaIcon.png" alt="icone da mesa" />
                   <p class="mesa_titulo">Mesa 1</p>
-
-
                </li>
             </button>
             <li class="lista__items">
