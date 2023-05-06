@@ -1,0 +1,61 @@
+@import "@/assets/scss/_main";
+
+.content__titulo-principal {
+  display: flex;
+  margin: 1.7rem;
+  border-bottom: 2px solid rgb(71, 70, 70);
+  width: 300px;
+}
+
+.titulo__principal {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.conteiner__reservas {
+}
+
+.lista__reservas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+}
+
+.lista__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(119, 119, 119);
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.lista__items:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.mesa_icone {
+  width: 100px;
+}
+.mesa_titulo {
+  font-weight: bold;
+}
+.conteiner__modal {
+  bottom: 100px;
+  left: 400px;
+  position: absolute;
+}
+.mb-3 {
+  margin: 19px 10px;
+}
+.btn-primary {
+  background-color: $marronvinho;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+}

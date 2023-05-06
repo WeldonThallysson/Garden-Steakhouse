@@ -1,0 +1,76 @@
+@import "@/assets/scss/_main";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&display=swap");
+
+.conteudo__principal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.content__titulo-principal {
+  display: flex;
+  margin: 1.7rem;
+  border-bottom: 2px solid rgb(71, 70, 70);
+  width: 250px;
+}
+.titulo__principal {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.text-bg-primary {
+  background: url("../../assets/Imgs/FundoCard.png");
+  background-repeat: no-repeat;
+  background-size: 112%;
+  background-position: 1%;
+  margin: 0 1.5rem;
+  opacity: 0.9;
+}
+
+.text-bg-primary::before {
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.6799894957983193) 0%,
+    rgba(0, 0, 0, 0.6474964985994398) 52%,
+    rgba(0, 0, 0, 0.9418942577030813) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.text-bg-primary:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+.titulo__header {
+  font-size: 12px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 4px;
+  border-radius: 3px;
+  border: none;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.titulo__Mesa {
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-text {
+  width: 250px;
+}
+.content__titulo-principal {
+  display: flex;
+}
