@@ -37,12 +37,33 @@ export default {
                     </div>
                     <div class="conteudo__redes-social">
                         <ul class="lista__social">
-                            <li class="items__Lista"><a>Facebook</a></li>
-                            <li class="items__Lista"><a>Instagram</a></li>
-                            <li class="items__Lista"><a>Twitter</a></li>
+                            <li class="items__Lista"><img src="../../assets/Imgs/Icones/facebook.png" alt="icone facebook"
+                                    width="22" /><a class="texto__link" href="">GardenSteakhousePlus </a></li>
+                            <li class="items__Lista"><img src="../../assets/Imgs/Icones/instagram.png" alt="icone instagram"
+                                    width="22" /><a class="texto__link" href="">@GardenSteakHouse </a></li>
+                            <li class="items__Lista"><img src="../../assets/Imgs/Icones/twitter.png" alt="icone twitter"
+                                    width="22" /><a class="texto__link" href="">@SteakhouseGarden </a></li>
                         </ul>
 
                     </div>
+                    <div>
+                        <h4 class="titulo__localizacao">Entre em Contato</h4>
+                    </div>
+
+                    <div class="conteudo__redes-social">
+                        <ul class="lista__social">
+                            <li class="items__Lista Contato"><img src="../../assets/Imgs/Icones/gmail.png" alt="icone gmail"
+                                    width="22" /><a class="texto__link"
+                                    href="mailto:weldonthallysson.dev@gmail.com">gardensteakhouse@gmail.com </a></li>
+                            <li class="items__Lista Contato"><img src="../../assets/Imgs/Icones/whatsapp.png"
+                                    alt="icone instagram" width="22" /><a class="texto__link"
+                                    href="https://wa.me/48998289858">(48) 99828-9858</a></li>
+
+                        </ul>
+
+                    </div>
+
+
                 </div>
             </div>
         </DashboardComponent>
@@ -51,7 +72,6 @@ export default {
 
 
 
-    </div>
-</template>
+</div></template>
 
 <style lang="scss" src="./style.scss" scoped/>
