@@ -1,3 +1,33 @@
-@import '@/assets/scss/_main';
+@import "@/assets/scss/_main";
 
-.main{}
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.Conteudo__Principal {
+  width: 80vw;
+}
+
+.content__titulo-principal {
+  display: flex;
+  margin: 1.7rem;
+  border-bottom: 2px solid rgb(22, 22, 22);
+  width: 250px;
+}
+
+.imagem__garden {
+  width: 90%;
+  height: 450px;
+}
+.Conteudo__Texto {
+  display: flex;
+  flex-direction: column;
+  margin: 1.7rem;
+}
+.estilo__texto {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Barlow", sans-serif;
+  margin: 10px;
+}

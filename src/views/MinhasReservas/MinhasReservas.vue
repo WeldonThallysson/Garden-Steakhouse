@@ -1,34 +1,29 @@
 
 
 <script>
- import DashboardComponent from '../../components/DashboardComponent.vue';
- import CardsReservasComponent from '../../components/CardsReservas/CardsReservasComponent.vue';
-   export default{
-    name: "MinhasReservas",
-    components:{
-        DashboardComponent,
-        CardsReservasComponent,
-   
-    }
+import DashboardComponent from '../../components/DashboardComponent.vue';
+import CardsReservasComponent from '../../components/CardsReservas/CardsReservasComponent.vue';
+export default {
+  name: "MinhasReservas",
+  components: {
+    DashboardComponent,
+    CardsReservasComponent,
 
-   }
+  }
+
+}
 
 </script>
 
 <template>
-    <div class="main">
-       
-            <DashboardComponent>
-               <div>
-                 <h2>Minhas Reservas</h2>
-               </div>
-               <CardsReservasComponent/>
-            </DashboardComponent>
-          
-        
+  <div class="main">
 
-     
-    </div>
+    <DashboardComponent>
+      <CardsReservasComponent />
+    </DashboardComponent>
+
+
+  </div>
 </template>
 
 <style lang="scss" src="./style.scss" scoped/>

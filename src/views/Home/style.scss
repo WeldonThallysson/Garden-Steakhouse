@@ -1,18 +1,15 @@
+@import "@/assets/scss/_main";
 
-@import '@/assets/scss/_main';
-
-.main{
-    display: flex;
-    flex-direction: row;
-    
-
+.main {
+  display: flex;
+  flex-direction: row;
 }
 
-.content__principal{
-    display: flex;
-    flex-direction: column;
+.content__principal {
+  display: flex;
+  flex-direction: column;
 }
 
-.conteudo__Pagina{
-    position: absolute
+.conteudo__Pagina {
+  position: absolute;
 }

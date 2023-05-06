@@ -1,3 +1,36 @@
-@import '@/assets/scss/_main';
+@import "@/assets/scss/_main";
 
-.main{}
+.main {
+}
+
+.content__titulo-principal {
+  display: flex;
+  margin: 1.7rem;
+  border-bottom: 2px solid rgb(22, 22, 22);
+  width: 250px;
+}
+
+.conteudo__contato {
+  display: flex;
+  flex-direction: column;
+}
+.titulo__localizacao {
+  margin: 0px 30px;
+}
+
+.ratio {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 230px;
+  margin: 15px 30px;
+}
+
+.conteudo__redes-social {
+  display: flex;
+}
+.lista__social {
+  list-style: none;
+}
+.items__Lista {
+}
