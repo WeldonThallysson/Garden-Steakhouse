@@ -5,15 +5,22 @@ export default {
   name: 'SignUp',
   data() {
     return {
-
+       nome:'',
+       email:'',
+       password:'',
     }
   },
   methods: {
 
     CriarConta(e) {
       e.preventDefault();
+           try{
 
-      this.$router.push({ name: 'home' });
+            this.$router.push({ name: 'home' });
+           }catch(error){
+
+           }
+
     },
     redirecionarLogin(e) {
       e.preventDefault();

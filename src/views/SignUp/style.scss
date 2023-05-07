@@ -8,7 +8,7 @@
     rgba(0, 0, 0, 0.5) 0%,
     rgba(0, 0, 0, 0.6799894957983193) 0%,
     rgba(0, 0, 0, 0.6474964985994398) 52%,
-    rgba(0, 0, 0, 0.9418942577030813) 100%
+    rgba(175, 115, 115, 0.942) 100%
   );
   width: 100vw;
   height: 100vh;
@@ -28,14 +28,13 @@
 }
 
 .content__login {
+  align-items: center;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin: 0 8rem;
   width: 100vw;
   z-index: 2;
-  margin: 0 8rem;
-
-  justify-content: space-between;
-  align-items: center;
 }
 
 .content__Form {
@@ -44,7 +43,7 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  height: 455px;
+  height: 425px;
   justify-content: center;
   width: 480px;
 }
@@ -65,6 +64,7 @@
 
   img {
     width: 100%;
+
   }
 }
 
@@ -97,4 +97,1034 @@
   align-items: center;
   text-align: center;
   border: none;
+}
+
+
+@media screen and (min-width: 280px) {
+  .main {
+  }
+
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(7, 7, 7, 0.742) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .content__login {
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: 0 1rem;
+  }
+  .content__Form {
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    padding: 10px;
+    width: 250px;
+  }
+  .content__Logo {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 0px;
+    margin-bottom: -30px;
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-family: "Barlow", sans-serif;
+      display: none;
+      padding: 10px 51px;
+    }
+
+    img {
+      width:50%;
+      margin-bottom: 10px;
+    }
+  }
+  .form-control {
+
+  }
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 21px;
+    padding: 2px;
+  }
+  .titulo {
+    
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+    padding: 10px 31px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 11px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 300px) {
+  .main {
+  }
+
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(7, 7, 7, 0.742) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .content__login {
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: 0 1rem;
+  }
+  .content__Form {
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 455px;
+    padding: 10px;
+    width: 280px;
+  }
+  .content__Logo {
+    display: none;
+    flex-direction: column;
+
+    margin-right: 0px;
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-family: "Barlow", sans-serif;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+  .form-control {
+
+  }
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 25px;
+    padding: 2px;
+  }
+  .titulo {
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+    padding: 10px 40px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 320px) {
+  .main {
+  }
+
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(7, 7, 7, 0.742) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .content__login {
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: 0 1rem;
+  }
+  .content__Form {
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 445px;
+    padding: 10px;
+    width: 280px;
+  }
+  .content__Logo {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 0px;
+    margin-bottom: -60px;
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-family: "Barlow", sans-serif;
+      display: none;
+      padding: 10px 51px;
+    }
+
+    img {
+      width:50%;
+      margin-bottom: 20px;
+      
+    }
+  }
+  .form-control {
+
+  }
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 21px;
+    padding: 2px;
+  }
+  .titulo {
+    
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 375px) {
+  .main {
+  }
+
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(7, 7, 7, 0.742) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .content__login {
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: 0 1rem;
+  }
+  .content__Form {
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 445px;
+    padding: 10px;
+    width: 320px;
+  }
+  .content__Logo {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 0px;
+    margin-bottom: -30px;
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-family: "Barlow", sans-serif;
+      display: none;
+      padding: 10px 51px;
+    }
+
+    img {
+      width:50%;
+      
+    }
+  }
+  .form-control {
+
+  }
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 21px;
+    padding: 2px;
+  }
+  .titulo {
+    
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+    padding: 10px 60px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 425px) {
+  .main {
+  }
+
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(7, 7, 7, 0.742) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  .content__login {
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: 0 1rem;
+  }
+  .content__Form {
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    padding: 10px;
+    width: 380px;
+  }
+  .content__Logo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-bottom: -30px;
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-family: "Barlow", sans-serif;
+      display: none;
+      padding: 10px 51px;
+    }
+
+    img {
+      width:50%;
+      
+    }
+  }
+  .form-control {
+
+  }
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 21px;
+    padding: 2px;
+  }
+  .titulo {
+    
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+    padding: 10px 75px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 765px) {
+  .main {
+  }
+
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(7, 7, 7, 0.742) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  .content__login {
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: 0 1rem;
+  }
+  .content__Form {
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    padding: 10px;
+    width: 480px;
+  }
+  .content__Logo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-bottom: -30px;
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-family: "Barlow", sans-serif;
+      display: none;
+      padding: 10px 51px;
+    }
+
+    img {
+      width:50%;
+      
+    }
+  }
+  .form-control {
+
+  }
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 21px;
+    padding: 2px;
+  }
+  .titulo {
+    
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+    padding: 10px 75px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+  }
+
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(7, 7, 7, 0.742) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  .content__login {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 4rem;
+  }
+  .content__Form {
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    padding: 10px;
+    width: 480px;
+  }
+  .content__Logo {
+    display: flex;
+    flex-direction: column;
+    margin-right: -50px;
+    margin-bottom: 80px;
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-family: "Barlow", sans-serif;
+      display: flex;
+      padding: 10px 51px;
+    }
+
+    img {
+      width:100%;
+      
+    }
+  }
+  .form-control {
+
+  }
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 21px;
+    padding: 2px;
+  }
+  .titulo {
+    
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+    padding: 10px 75px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .main {
+  }
+
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(7, 7, 7, 0.742) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  .content__login {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 4rem;
+  }
+  .content__Form {
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    padding: 10px;
+    width: 480px;
+  }
+  .content__Logo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+    margin-bottom: 120px;
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-family: "Barlow", sans-serif;
+      display: flex;
+      padding: 20px 51px;
+
+    }
+
+    img {
+      width:100%;
+      margin-top: 10px;
+      
+    }
+  }
+  .form-control {
+
+  }
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 21px;
+    padding: 2px;
+  }
+  .titulo {
+    
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+    padding: 10px 75px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .main {
+  }
+
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(7, 7, 7, 0.742) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  .content__login {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 4rem;
+  }
+  .content__Form {
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    padding: 10px;
+    width: 480px;
+  }
+  .content__Logo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+    margin-bottom: 120px;
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-family: "Barlow", sans-serif;
+      display: flex;
+      padding: 20px 51px;
+
+    }
+
+    img {
+      width:100%;
+      margin-top: 10px;
+      
+    }
+  }
+  .form-control {
+
+  }
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 21px;
+    padding: 2px;
+  }
+  .titulo {
+    
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+    padding: 10px 75px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .login::after {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(0, 0, 0, 0.9474964985994398) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+  }
+  .login {
+    align-items: center;
+    background: url("../../assets/Imgs/Playground-Restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    object-fit: contain;
+  }
+
+  .content__login {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 8rem;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  .content__Form {
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 445px;
+    justify-content: center;
+    width: 480px;
+  }
+  .content__Logo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 175px;
+    margin-right: 100px;
+
+    p {
+      display: flex;
+      color: white;
+      font-size: 25px;
+      font-family: "Barlow", sans-serif;
+      margin-top: -120px;
+    }
+
+    img {
+      display: flex; 
+      width: 100%;
+      margin-top: 10px;
+
+    }
+  }
+
+  .content__Title-Form {
+    border-bottom: 2px solid rgb(103, 50, 1);
+    margin: 25px;
+  }
+  .titulo {
+    color: rgb(34, 16, 1);
+  }
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $marronvinho;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #400f00;
+    border: none;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .btn-secundary {
+    display: flex;
+    width: 100%;
+    padding: 10px 60px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+  }
 }

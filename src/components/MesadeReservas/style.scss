@@ -59,3 +59,157 @@
   width: 100%;
   font-weight: bold;
 }
+
+@media screen and (min-width: 280px) {
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  
+  .content__titulo-principal {
+    display: flex;
+    margin: 1.7rem;
+    border-bottom: 2px solid rgb(71, 70, 70);
+    width: 200px;
+  }
+  .titulo__principal {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .lista__reservas {
+    display: grid;
+    grid-template-columns: repeat(1, 0.9fr);
+    list-style: none;
+   
+ 
+  }
+   
+}
+
+@media screen and (min-width: 320px) {
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  
+  .content__titulo-principal {
+    display: flex;
+    margin: 1.7rem;
+    border-bottom: 2px solid rgb(71, 70, 70);
+    width: 200px;
+  }
+  .titulo__principal {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .lista__reservas {
+    display: grid;
+    grid-template-columns: repeat(1, 0.9fr);
+    list-style: none;
+   
+ 
+  }
+  
+}
+@media screen and (min-width: 425px) {
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  
+  .content__titulo-principal {
+    display: flex;
+    margin: 1.7rem;
+    border-bottom: 2px solid rgb(71, 70, 70);
+    width: 200px;
+  }
+  .titulo__principal {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .lista__reservas {
+    display: grid;
+    grid-template-columns: repeat(1, 0.9fr);
+    list-style: none;
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  
+  .content__titulo-principal {
+    display: flex;
+    margin: 1.7rem;
+    border-bottom: 2px solid rgb(71, 70, 70);
+    width: 300px;
+  }
+  .titulo__principal {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .lista__reservas {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    list-style: none;
+  }
+  
+}
+@media screen and (min-width: 1024px) {
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+
+
+  }.lista__reservas {
+    display: grid;
+    grid-template-columns: repeat(3, 0.7fr);
+    list-style: none;
+  }
+  
+}
+@media screen and (min-width: 1300px) {
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+
+
+  }.lista__reservas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+  }
+  
+}
+
+@media screen and (min-width: 1600px) {
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+
+
+  }.lista__reservas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+  }
+  
+}

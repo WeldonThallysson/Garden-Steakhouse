@@ -5,10 +5,7 @@
  import {reactive} from 'vue';
  
 
- const user = reactive({
-      email: '' ,
-      password:'',
-    });
+ 
  
  
 

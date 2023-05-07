@@ -5,18 +5,23 @@ export default {
    data() {
       return {
          ativarModal: false,
+         data: '',
+         horario:'Horário Reserva',
+         
       }
    },
 
    methods: {
-      abrirModal() {
-
+      /*abrirModal() {
+        
+          
          this.ativarModal = true;
 
-      },
-      cadastrarReserva() {
-
-
+      },*/
+      cadastrarReserva(e) {
+         e.preventDefault();
+         console.log('horario '+ this.horario);
+         console.log('data '+ this.data);
          alert('Reserva cadastrada');
 
       }
@@ -26,8 +31,8 @@ export default {
 
 </script>
 
-<template v-if="ativarmodal === false">
-   <section>
+<template>
+   <section class="section__cards">
 
       <div class="content__titulo-principal">
          <h2 class="titulo__principal">Faça a sua Reserva!</h2>
@@ -37,7 +42,7 @@ export default {
       <div class="conteiner__reservas">
          <ul class="lista__reservas">
             <button style="border: none; background:none" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-               <li class="lista__items" @click="abrirModal()">
+               <li class="lista__items">
 
                   <img class="mesa_icone" src="../../assets/Imgs/MesaIcon.png" alt="icone da mesa" />
                   <p class="mesa_titulo">Mesa 1</p>
@@ -104,7 +109,7 @@ export default {
 
       </div>
 
-      <div class="conteiner__modal" v-if="ativarModal === true">
+      <div class="conteiner__modal" >
          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
@@ -119,36 +124,29 @@ export default {
 
                   <div class="modal-body">
                      <div class="card-body">
-
-                        <p class="card-text">Descrição: Mesa perto da lareira com vista para o saguão.</p>
-
-                     </div>
+                  </div>
                      <form @submit="cadastrarReserva">
-                        <div class="row mb-3">
-                           <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label>
-                           <div class="col-sm-10">
-                              <input type="text" required class="form-control" id="inputEmail3">
-                           </div>
-                        </div>
+                       
                         <div class="row mb-3">
                            <label for="inputEmail3" class="col-sm-2 col-form-label">Data</label>
                            <div class="col-sm-10">
-                              <input type="date" required class="form-control" id="inputEmail3">
+                              <input type="date" v-model="data" required class="form-control" id="inputEmail3">
                            </div>
                         </div>
                         <div class="row mb-3">
-                           <select class="form-select" required aria-label="Default select example">
+                           <select class="form-select" required aria-label="Default select example" v-model="horario">
                               <option selected required>Horário Reserva</option>
-                              <option value="1">18:00h</option>
-                              <option value="2">19:00h</option>
-                              <option value="3">20:00h</option>
-                              <option value="4">20:30h</option>
-                              <option value="5">21:00h</option>
-                              <option value="6">21:30h</option>
-                              <option value="7">22:00h</option>
-                              <option value="8">22:30h</option>
-                              <option value="9">23:00h</option>
-                              <option value="10">23:30h</option>
+                              <option value="18:00">18:00</option>
+                              <option value="19:00">19:00h</option>
+                              <option value="19:00">19:30h</option>
+                              <option value="19:00">20:00h</option>
+                              <option value="19:00">20:30h</option>
+                              <option value="21:00">21:00h</option>
+                              <option value="21:30">21:30h</option>
+                              <option value="22:00">22:00h</option>
+                              <option value="22:30">22:30h</option>
+                              <option value="23:00">23:00h</option>
+                              <option value="23:30">23:30h</option>
                            </select>
 
 
