@@ -24,12 +24,12 @@
                 e.preventDefault();
                 
                 //aqui posso passar o name que crei para a rota ou o path que seria /home tbm pode ser o importante é que atráves do .use(router) no main posso usar o $router em qualquer arquivo dentro da tag script, to usando aqui para quando clicar empurrar para a rota home onde está o dashboard das reservas.
-               /* try{
-                  const {data} = await http.post('/auth',user);
+                try{
+                  const { data } = await http.post('/cadastro',{email,password});
                   console.log(data);
                 }catch(error){
                       console.log(error?.response?.data);
-                }*/
+                }
                 
                 this.$router.push({name: 'home'})
             },

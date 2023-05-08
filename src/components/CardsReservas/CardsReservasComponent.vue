@@ -25,8 +25,8 @@ export default {
       <h2 class="titulo__principal">Minhas Reservas</h2>
 
     </div>
-    <div class="conteudo__principal">
-      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+    <ul class="conteudo__principal" >
+      <li class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">
           <p class="titulo__header">{{nome}} </p>
           <p class="titulo__Mesa">Mesa {{mesa}}</p>
@@ -35,8 +35,8 @@ export default {
           <span class="card-title">Reservada para {{data}}</span>
           <p class="card-text"> Mesa reservada para as {{horario_reservado}}h {{ descricao }}! </p>
         </div>
-      </div>
-      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+      </li>
+      <li class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">
           <p class="titulo__header">Nome do Cliente </p>
           <p class="titulo__Mesa">Mesa 2</p>
@@ -45,8 +45,8 @@ export default {
           <span class="card-title">Reservada para 22/05/2023</span>
           <p class="card-text"> Mesa reservada para as 19:30h em frente a Lareira! </p>
         </div>
-      </div>
-      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+      </li>
+      <li class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">
           <p class="titulo__header">Nome do Cliente </p>
           <p class="titulo__Mesa">Mesa 3</p>
@@ -55,8 +55,8 @@ export default {
           <span class="card-title">Reservada para 22/05/2023</span>
           <p class="card-text"> Mesa reservada para as 19:30h em frente a Lareira! </p>
         </div>
-      </div>
-      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+      </li>
+      <li class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">
           <p class="titulo__header">Nome do Cliente </p>
           <p class="titulo__Mesa">Mesa 4</p>
@@ -65,8 +65,8 @@ export default {
           <span class="card-title">Reservada para 22/05/2023</span>
           <p class="card-text"> Mesa reservada para as 19:30h em frente a Lareira! </p>
         </div>
-      </div>
-      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+      </li>
+      <li class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">
           <p class="titulo__header">Nome do Cliente </p>
           <p class="titulo__Mesa">Mesa 5</p>
@@ -75,8 +75,8 @@ export default {
           <span class="card-title">Reservada para 22/05/2023</span>
           <p class="card-text"> Mesa reservada para as 19:30h em frente a Lareira! </p>
         </div>
-      </div>
-      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+      </li>
+      <li class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">
           <p class="titulo__header">Nome do Cliente </p>
           <p class="titulo__Mesa">Mesa 6</p>
@@ -85,8 +85,8 @@ export default {
           <span class="card-title">Reservada para 22/05/2023</span>
           <p class="card-text"> Mesa reservada para as 19:30h em frente a Lareira! </p>
         </div>
-      </div>
-      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+      </li>
+      <li class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">
           <p class="titulo__header">Nome do Cliente </p>
           <p class="titulo__Mesa">Mesa 7</p>
@@ -95,8 +95,8 @@ export default {
           <span class="card-title">Reservada para 22/05/2023</span>
           <p class="card-text"> Mesa reservada para as 19:30h em frente a Lareira! </p>
         </div>
-      </div>
-      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+      </li>
+      <li class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">
           <p class="titulo__header">Nome do Cliente </p>
           <p class="titulo__Mesa">Mesa 8</p>
@@ -105,10 +105,10 @@ export default {
           <span class="card-title">Reservada para 22/05/2023</span>
           <p class="card-text"> Mesa reservada para as 19:30h em frente a Lareira! </p>
         </div>
-      </div>
+      </li>
 
 
-    </div>
+    </ul>
   </section>
 </template>
 

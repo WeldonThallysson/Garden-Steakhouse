@@ -1,32 +1,38 @@
 
 
 <script>
+ import axios from 'axios';
 export default {
   name: 'SignUp',
   data() {
     return {
-       nome:'',
-       email:'',
-       password:'',
-    }
+      usuarios: [],
+      novoUsuario:{
+       nome: "",
+       email:"",
+       password:"",
+      }}
   },
   methods: {
-
-    CriarConta(e) {
+    async criarConta(e) {
       e.preventDefault();
-           try{
+        
+     
+       await axios.post('http://127.0.0.1:8000/api/register',this.novoUsuario)
+      .then(response => {
+          console.log(response.data)
+          this.usuarios.push(response.data)
 
-            this.$router.push({ name: 'home' });
-           }catch(error){
-
-           }
-
+      }).catch(error => {
+        console.log(error);
+      })
+      
+        
     },
-    redirecionarLogin(e) {
+    redirecionarLogin(e){
       e.preventDefault();
-
-      this.$router.push({ name: 'signin' });
-
+      
+      this.$router.push({ name: 'signin' })
     }
   }
 }
@@ -41,18 +47,18 @@ export default {
           <div class="content__Title-Form">
             <h2 class="titulo">Criar Conta</h2>
           </div>
-          <form @submit="CriarConta">
+          <form @submit="criarConta">
             <div class="mb-3">
 
               <label for="exampleInputEmail1" class="form-label">Digite seu Nome:</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <label for="exampleInputEmail1" class="form-label">Digite seu Email:</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="text" class="form-control" v-model="novoUsuario.nome" id="exampleInputEmail2" aria-describedby="emailHelp">
+              <label for="exampleInputEmail2" class="form-label">Digite seu Email:</label>
+              <input type="email" class="form-control" v-model="novoUsuario.email" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">Caso tenha duvida use seu gmail ou hotmail pessoal!</div>
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Digite sua Senha:</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" class="form-control" v-model="novoUsuario.password" id="exampleInputPassword1">
             </div>
 
             <button type="submit" class="btn btn-primary">Criar Conta</button>

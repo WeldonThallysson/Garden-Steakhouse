@@ -38,7 +38,6 @@
   height: 100%;
   position: absolute;
   width: 100%;
-
 }
 .text-bg-primary:hover {
   transition: all 0.5s ease-in-out;
@@ -52,7 +51,6 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 4px;
-
 }
 
 .card-header {
@@ -77,9 +75,6 @@
   display: flex;
 }
 
-
-
-
 @media screen and (min-width: 280px) {
   .conteudo__principal {
     display: grid;
@@ -91,22 +86,21 @@
     background-size: 135%;
     opacity: 0.9;
     background-position: 1%;
-    margin: 0 .8rem;
+    margin: 0 0.8rem;
     width: 90%;
-
   }
   .content__titulo-principal {
-  border-bottom: 2px solid rgb(71, 70, 70);
-  display: flex;
-  margin: 1rem;
-  width: 250px;
-}
-.titulo__principal {
-  font-weight: bold;
-  font-size: 28px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
+    border-bottom: 2px solid rgb(71, 70, 70);
+    display: flex;
+    margin: 1rem;
+    width: 250px;
+  }
+  .titulo__principal {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
 }
 @media screen and (min-width: 320px) {
   .conteudo__principal {
@@ -118,7 +112,6 @@
   .conteudo__principal {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
- 
   }
   .text-bg-primary {
     background: url("../../assets/Imgs/FundoCard.png");
@@ -134,13 +127,12 @@
   .conteudo__principal {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
- 
   }
   .text-bg-primary {
     background: url("../../assets/Imgs/FundoCard.png");
     background-repeat: no-repeat;
     background-size: 112%;
-  
+
     background-position: 1%;
     margin: 0 4rem;
     opacity: 0.9;
@@ -151,7 +143,6 @@
   .conteudo__principal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
- 
   }
   .text-bg-primary {
     background: url("../../assets/Imgs/FundoCard.png");
@@ -168,13 +159,12 @@
   .conteudo__principal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
- 
   }
   .text-bg-primary {
     background: url("../../assets/Imgs/FundoCard.png");
     background-repeat: no-repeat;
     background-size: 152%;
-  
+
     background-position: 1%;
     margin: 0 2rem;
     opacity: 0.9;
@@ -184,7 +174,6 @@
   .conteudo__principal {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
- 
   }
   .text-bg-primary {
     background: url("../../assets/Imgs/FundoCard.png");
@@ -200,7 +189,6 @@
   .conteudo__principal {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
- 
   }
   .text-bg-primary {
     background: url("../../assets/Imgs/FundoCard.png");
@@ -224,13 +212,11 @@
   .conteudo__principal {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
- 
   }
   .text-bg-primary {
     background: url("../../assets/Imgs/FundoCard.png");
     background-repeat: no-repeat;
     background-size: 152%;
-  
     background-position: 1%;
     margin: 0 1rem;
     opacity: 0.9;

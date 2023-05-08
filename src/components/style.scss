@@ -11,20 +11,18 @@
 }
 
 .content__side-bar {
-  display: flex;
-
-  width: 280px;
-  height: 100vh;
+  background-repeat: no-repeat;
   background: url("../assets/Imgs/restaurant_background.png");
   background-position: 5%;
   background-size: 90vw;
-  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
   justify-content: center;
-
+  width: 280px;
   h2 {
+    color: #fff;
     text-align: center;
     z-index: 1;
-    color: #fff;
   }
 }
 
@@ -43,10 +41,9 @@
 }
 
 .content__nav-bar {
+  background-color: rgb(15, 15, 15);
   display: flex;
   flex-direction: column;
-  background-color: rgb(15, 15, 15);
-
   width: 82vw;
   height: 80px;
 }
@@ -62,14 +59,12 @@
     display: none;
   }
   .content__nav-bar {
+    background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
-    background-color: rgb(15, 15, 15);
-  
     width: 100vw;
     height: 80px;
   }
-  
 }
 
 @media screen and (min-width: 320px) {
@@ -77,45 +72,41 @@
     display: none;
   }
   .content__nav-bar {
+    background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
-    background-color: rgb(15, 15, 15);
-  
     width: 100vw;
     height: 80px;
   }
-  
 }
 @media screen and (min-width: 1300px) {
   .content__side-bar {
     display: flex;
   }
   .content__nav-bar {
+    background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
-    background-color: rgb(15, 15, 15);
-  
-    width: 79vw;
     height: 80px;
+    width: 79vw;
   }
   .content__side-bar {
-    display: flex;
-  
-    width: 280px;
-    height: 100vh;
     background: url("../assets/Imgs/restaurant_background.png");
     background-position: 5%;
     background-size: auto;
     background-repeat: no-repeat;
+    display: flex;
+    width: 280px;
+    height: 100vh;
     justify-content: center;
-  
+
     h2 {
       text-align: center;
       z-index: 1;
       color: #fff;
     }
   }
-  
+
   .content__side-bar::before {
     content: "";
     background: linear-gradient(
@@ -126,8 +117,8 @@
       rgba(0, 0, 0, 0.9418942577030813) 100%
     );
     position: absolute;
-    width: 100%;
     height: 100vh;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1420px) {
@@ -135,31 +126,28 @@
     display: flex;
   }
   .content__nav-bar {
+    background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
-    background-color: rgb(15, 15, 15);
-  
-    width: 80vw;
     height: 80px;
+    width: 80vw;
   }
   .content__side-bar {
-    display: flex;
-  
-    width: 280px;
-    height: 100vh;
     background: url("../assets/Imgs/restaurant_background.png");
     background-position: 5%;
     background-size: auto;
     background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
     justify-content: center;
-  
+    width: 280px;
     h2 {
+      color: #fff;
       text-align: center;
       z-index: 1;
-      color: #fff;
     }
   }
-  
+
   .content__side-bar::before {
     content: "";
     background: linear-gradient(
@@ -170,8 +158,8 @@
       rgba(0, 0, 0, 0.9418942577030813) 100%
     );
     position: absolute;
-    width: 100%;
     height: 100vh;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -179,31 +167,29 @@
     display: flex;
   }
   .content__nav-bar {
+    background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
-    background-color: rgb(15, 15, 15);
-  
-    width: 82vw;
     height: 80px;
+    width: 82vw;
   }
   .content__side-bar {
-    display: flex;
-  
-    width: 280px;
-    height: 100vh;
     background: url("../assets/Imgs/restaurant_background.png");
     background-position: 5%;
     background-size: auto;
     background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    width: 280px;
     justify-content: center;
-  
+
     h2 {
+      color: #fff;
       text-align: center;
       z-index: 1;
-      color: #fff;
     }
   }
-  
+
   .content__side-bar::before {
     content: "";
     background: linear-gradient(
@@ -214,10 +200,9 @@
       rgba(0, 0, 0, 0.9418942577030813) 100%
     );
     position: absolute;
-    width: 100%;
     height: 100vh;
+    width: 100%;
   }
-  
 }
 
 @media screen and (min-width: 1680px) {
@@ -225,31 +210,29 @@
     display: flex;
   }
   .content__nav-bar {
+    background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
-    background-color: rgb(15, 15, 15);
-  
-    width: 82vw;
     height: 80px;
+    width: 82vw;
   }
   .content__side-bar {
-    display: flex;
-  
-    width: 280px;
-    height: 100vh;
     background: url("../assets/Imgs/restaurant_background.png");
     background-position: 5%;
     background-size: auto;
     background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
     justify-content: center;
-  
+    width: 280px;
+
     h2 {
+      color: #fff;
       text-align: center;
       z-index: 1;
-      color: #fff;
     }
   }
-  
+
   .content__side-bar::before {
     content: "";
     background: linear-gradient(
@@ -263,7 +246,6 @@
     width: 100%;
     height: 100vh;
   }
-  
 }
 
 @media screen and (min-width: 1920px) {
@@ -271,10 +253,9 @@
     display: flex;
   }
   .content__nav-bar {
+    background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
-    background-color: rgb(15, 15, 15);
-  
     width: 88vw;
     height: 80px;
   }

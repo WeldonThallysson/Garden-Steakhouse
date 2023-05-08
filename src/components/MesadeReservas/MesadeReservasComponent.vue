@@ -12,12 +12,6 @@ export default {
    },
 
    methods: {
-      /*abrirModal() {
-        
-          
-         this.ativarModal = true;
-
-      },*/
       cadastrarReserva(e) {
          e.preventDefault();
          console.log('horario '+ this.horario);

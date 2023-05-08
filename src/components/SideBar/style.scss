@@ -3,22 +3,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&display=swap");
 
 .content__items {
+  align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: 45px;
-
-  align-items: center;
 }
 .content__avatar {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   p {
+    color: #fff;
     padding: 10px;
     font-size: 18px;
-    color: #fff;
   }
 }
 
@@ -36,11 +35,11 @@
 }
 
 .Links {
-  padding-left: 0.5em;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   font-family: "Barlow", sans-serif;
-  color: #fff;
+  padding-left: 0.5em;
   text-decoration: none;
   text-align: center;
 }
@@ -49,8 +48,3 @@
   transition: all 0.2s ease-in-out;
   color: rgb(200, 126, 0);
 }
-
-
-
-
-
