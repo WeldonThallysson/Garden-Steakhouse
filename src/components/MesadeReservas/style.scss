@@ -84,6 +84,18 @@
     grid-template-columns: repeat(1, 0.9fr);
     list-style: none;
   }
+  .lista__items {
+    align-items: center;
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: 200px;
+  
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -106,8 +118,20 @@
   }
   .lista__reservas {
     display: grid;
-    grid-template-columns: repeat(1, 0.9fr);
+    grid-template-columns: repeat(1, 1fr);
     list-style: none;
+  }
+  .lista__items {
+    align-items: center;
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: 300px;
+  
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 425px) {
@@ -179,6 +203,18 @@
     grid-template-columns: repeat(5, 1fr);
     list-style: none;
   }
+  .lista__items {
+    align-items: center;
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3px;
+    width: 120px;
+  
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -190,5 +226,18 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     list-style: none;
+    
+  }
+  .lista__items {
+    align-items: center;
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: 200px;
+  
+    cursor: pointer;
   }
 }

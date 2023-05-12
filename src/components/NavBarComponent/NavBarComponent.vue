@@ -1,6 +1,13 @@
 <script>
 export default {
     name: 'NavBarComponent',
+
+    methods:{
+
+        logout(){
+          localStorage.clear()
+        }
+    }
 }
 </script>
 
@@ -9,7 +16,7 @@ export default {
         <ul class="content__Reserves">
             <li class="disabled">
                 <div class="conteiner__style-image">
-                    <img class="image__style" src="../../assets/Imgs/LogoGarden.png" />
+                    <img class="image__style" src="../../assets/Imgs/LogoGarden.png" alt="logo da garden steakhouse"/>
                 </div>
             </li>
             <li class="display__item">
@@ -37,9 +44,9 @@ export default {
                 </div>
             </li>
 
-            <li >
+            <li>
                 <div class="content__item">
-                    <router-link class="Links" to="/">
+                    <router-link class="Links" @click="logout" to="/">
                            <span class="text__fullresolution">Sair</span>
                             <fa icon="right-to-bracket" class="icon" />
                       

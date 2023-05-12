@@ -5,11 +5,28 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.btn_excluir{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  top: 6px;
+  margin: 0px;
+  background: none;
+  border: none;
+  color: aliceblue
+  
+}
 .content__titulo-principal {
   border-bottom: 2px solid rgb(71, 70, 70);
   display: flex;
   margin: 1.7rem;
   width: 250px;
+}
+.nenhuma-reserva{
+  display: flex;
+  margin: 1.7rem;
+  width: 450px;
+  border-bottom: none;
 }
 .titulo__principal {
   font-weight: bold;
@@ -48,6 +65,7 @@
   border: none;
   color: white;
   font-size: 12px;
+  font-weight: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 4px;
@@ -55,13 +73,15 @@
 
 .card-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .titulo__Mesa {
   display: flex;
-  font-size: 14px;
-  font-weight: bold;
-  justify-content: center;
+  font-size: 12px;
+ 
+  justify-content: flex-end;
+  top: 3px;
+  margin-left: 80px;
 }
 
 .card-title {
@@ -107,12 +127,25 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .nenhuma-reserva{
+    display: flex;
+    margin: 0.9rem;
+    width: 250px;
+    border-bottom: none;
+  }
+  .titulo__principal {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  ul{
+    margin-left: -2rem;
+  }
+ 
 }
 @media screen and (min-width: 375px) {
-  .conteudo__principal {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
+ 
   .text-bg-primary {
     background: url("../../assets/Imgs/FundoCard.png");
     background-repeat: no-repeat;
@@ -122,12 +155,28 @@
     margin: 0 2.5rem;
     opacity: 0.9;
   }
-}
-@media screen and (min-width: 425px) {
   .conteudo__principal {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .nenhuma-reserva{
+    display: flex;
+    margin: 0.9rem;
+    width: 250px;
+    border-bottom: none;
+  }
+  .titulo__principal {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  ul{
+    margin-left: -3rem;
+  }
+ 
+}
+@media screen and (min-width: 425px) {
   .text-bg-primary {
     background: url("../../assets/Imgs/FundoCard.png");
     background-repeat: no-repeat;
@@ -136,7 +185,26 @@
     background-position: 1%;
     margin: 0 4rem;
     opacity: 0.9;
+  }.conteudo__principal {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
+  .nenhuma-reserva{
+    display: flex;
+    margin: 0.9rem;
+    width: 450px;
+    border-bottom: none;
+  }
+  .titulo__principal {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  ul{
+    margin-left: -1rem;
+  }
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -220,5 +288,83 @@
     background-position: 1%;
     margin: 0 1rem;
     opacity: 0.9;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .conteudo__principal {
+
+    display: grid;
+    grid-template-columns: repeat(4, 0.6fr);
+  }
+  .content__titulo-principal {
+    border-bottom: 2px solid rgb(71, 70, 70);
+    display: flex;
+    margin: 1.7rem;
+    width: 250px;
+  }
+  .titulo__principal {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .text-bg-primary {
+    background: url("../../assets/Imgs/FundoCard.png");
+    background-repeat: no-repeat;
+    background-size: 112%;
+    background-position: 1%;
+    margin: 0 0rem;
+    opacity: 0.9;
+    
+  }
+  
+  .text-bg-primary::before {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.6799894957983193) 0%,
+      rgba(0, 0, 0, 0.6474964985994398) 52%,
+      rgba(0, 0, 0, 0.9418942577030813) 100%
+    );
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .text-bg-primary:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+  }
+  .titulo__header {
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    width: 75px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 4px;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .titulo__Mesa {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: center;
+  }
+  
+  .card-title {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .card-text {
+    width: 250px;
+  }
+  .content__titulo-principal {
+    display: flex;
   }
 }

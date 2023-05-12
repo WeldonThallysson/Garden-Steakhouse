@@ -2,7 +2,21 @@
 // esse componente vai servir para as duas telas o home e o minhas reservas.
 export default {
     name: 'SideBarComponent',
+    data() {
+    return {
+        nome: '',
+    }
+   },
+    mounted(){
+        const data = JSON.parse(localStorage.getItem('@usuario'))
+           data.map(item => {
+                this.nome = item.name;
+                console.log(item)
+           })
+   
+  },
 
+ 
 }
 
 
@@ -12,8 +26,9 @@ export default {
 
         <div class="content__items">
             <div class="content__avatar">
-                <img class="img" src="../../assets/Imgs/PerfilAvatar.png" />
-                <p>Nome do cliente</p>
+                <img class="img" src="../../assets/Imgs/PerfilAvatar.png" alt="imagem de avatar fixo " />
+                <p>Olá!</p>
+                <p class="titulo__nome">{{nome}}</p>
             </div>
             <nav class="content__nav-menu">
                 <ul class="list__style">

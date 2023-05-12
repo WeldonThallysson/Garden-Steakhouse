@@ -1,28 +1,32 @@
 
 
 <script>
- import axios from 'axios';
+ import http from '../../service/http';
 export default {
   name: 'SignUp',
   data() {
     return {
       usuarios: [],
-      novoUsuario:{
        nome: "",
        email:"",
        password:"",
-      }}
+      }
   },
   methods: {
     async criarConta(e) {
       e.preventDefault();
         
-     
-       await axios.post('http://127.0.0.1:8000/api/register',this.novoUsuario)
+       console.log(this.nome);
+       console.log(this.email);
+       console.log(this.password);
+
+       await http.post('/register',{name: this.nome, email: this.email, password: this.password})
       .then(response => {
           console.log(response.data)
           this.usuarios.push(response.data)
-
+          localStorage.setItem('@usuario',JSON.stringify(this.usuarios))
+          this.$router.push({name: 'home'})
+    
       }).catch(error => {
         console.log(error);
       })
@@ -51,14 +55,14 @@ export default {
             <div class="mb-3">
 
               <label for="exampleInputEmail1" class="form-label">Digite seu Nome:</label>
-              <input type="text" class="form-control" v-model="novoUsuario.nome" id="exampleInputEmail2" aria-describedby="emailHelp">
+              <input type="text" required class="form-control" v-model="nome" id="exampleInputEmail2" aria-describedby="emailHelp">
               <label for="exampleInputEmail2" class="form-label">Digite seu Email:</label>
-              <input type="email" class="form-control" v-model="novoUsuario.email" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" required class="form-control" v-model="email" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">Caso tenha duvida use seu gmail ou hotmail pessoal!</div>
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Digite sua Senha:</label>
-              <input type="password" class="form-control" v-model="novoUsuario.password" id="exampleInputPassword1">
+              <input type="password" required class="form-control" v-model="password" id="exampleInputPassword1">
             </div>
 
             <button type="submit" class="btn btn-primary">Criar Conta</button>
@@ -67,7 +71,7 @@ export default {
           </form>
         </div>
         <div class="content__Logo">
-          <img class="logo__Img" src='../../assets/Imgs/LogoGarden.png' />
+          <img class="logo__Img" src='../../assets/Imgs/LogoGarden.png' alt="imagem da logo de criar conta"/>
           <p>O Melhor Restaurante da Cidade</p>
         </div>
       </div>

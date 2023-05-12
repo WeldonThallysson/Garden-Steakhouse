@@ -5,7 +5,9 @@ import {
   faList,
   faPhone,
   faAddressCard,
+  faClose,
   faRightToBracket,
+  
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -20,7 +22,7 @@ import Contato from "./views/Contato/Contato.vue";
 
 import "./assets/main.css";
 
-library.add(faHome, faList, faPhone, faAddressCard, faRightToBracket);
+library.add(faHome, faList, faPhone, faAddressCard, faRightToBracket, faClose);
 
 const router = createRouter({
   history: createWebHistory(),
