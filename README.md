@@ -1,14 +1,11 @@
 # Garden-Steakhouse
 
 This template should help get you started developing with Vue 3 in Vite.
+## Link do Deploy
+https://gardensteakhouse.netlify.app/
+![Captura de Tela (49)](https://github.com/WeldonThallysson/Garden-Steakhouse/assets/65944963/c0baf384-11ea-4183-824a-e10db3d6580d)
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
